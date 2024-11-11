@@ -38,10 +38,6 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
-      # Paso 6: Crear el plan de Terraform
-      - name: Terraform Plan
-        run: terraform plan
-
       # Paso 7: Aplicar el plan de Terraform
       - name: Terraform Apply
         run: terraform apply -auto-approve
