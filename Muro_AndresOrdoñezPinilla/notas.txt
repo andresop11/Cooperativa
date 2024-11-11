@@ -1,0 +1,10 @@
+Funcionalidad alcanzada de mi proyecto: 
+
+-Login y registro de usuarios
+-Los usuarios pueden publicar
+-Los usuarios pueden responder
+-Se puede ver todos los usuarios registrados en la pagina 
+-Se puede ver el muro de todos los usuarios registrados y sus publicaciones
+ademas de responderle 
+-Existe un archivo de log 
+-Se pueden eliminar las publicaciones de tu muro 

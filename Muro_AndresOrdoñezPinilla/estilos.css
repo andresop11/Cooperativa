@@ -1,0 +1,303 @@
+/* Estilos para el título y el párrafo */
+h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #666;
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fffbe3;
+    box-shadow: 0px 0px 6px gray inset;
+}
+
+/* Estilos para las etiquetas */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilos para los campos de entrada */
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px blue inset;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilos para los botones de envío */
+form input[type="submit"] {
+    width: 48%;
+    padding: 10px;
+    margin-right: 4%;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0px 0px 5px white inset;
+}
+
+/* Botón de "Acceder" en verde */
+form input[type="submit"][value="Acceder"] {
+    background-color: #4CAF50;
+}
+
+/* Botón de "Registrarme" en azul */
+form input[type="submit"][value="Registrarme"] {
+    background-color: #008CBA;
+    margin-right: 0;
+}
+
+
+
+/*ESTILOS PUBLICACIONES: */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sección de cierre de sesión y lista de usuarios */
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #008cba;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0077a3;
+}
+
+/* Lista de usuarios */
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+ol li a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+ol li a:hover {
+    text-decoration: underline;
+}
+
+/* Formulario de publicación */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+input[type="submit"][value="Publicar"] {
+    width: 100%;
+    background-color: #4caf50;
+}
+
+input[type="submit"][value="Publicar"]:hover {
+    background-color: #43a047;
+}
+
+/* Sección de publicaciones */
+.publicacion {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.publicacion h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.publicacion pre {
+    font-family: inherit;
+    color: #555;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+}
+
+.publicacion h5 {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Botones dentro de la publicación */
+.publicacion form {
+    display: flex;
+    gap: 10px;
+}
+
+.publicacion input[type="submit"][value="Responder"],
+.publicacion input[type="submit"][value="Eliminar"] {
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.publicacion input[type="submit"][value="Responder"] {
+    background-color: #008cba;
+    color: white;
+}
+
+.publicacion input[type="submit"][value="Eliminar"] {
+    background-color: #e53935;
+    color: white;
+}
+
+.publicacion input[type="submit"][value="Responder"]:hover {
+    background-color: #0077a3;
+}
+
+.publicacion input[type="submit"][value="Eliminar"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Enlace a "Mis Publicaciones" */
+.mis-publicaciones-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #008cba;
+    text-decoration: none;
+}
+
+.mis-publicaciones-link:hover {
+    text-decoration: underline;
+}
+
+
+/*IDENTIFICACION.PHP*/
+
+
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo del título */
+h2 {
+    color: #333;
+}
+
+/* Estilo del párrafo */
+p {
+    color: #666;
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilo de los botones de envío */
+input[type="submit"] {
+    width: 48%;
+    padding: 10px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Botón "Acceder" */
+input[type="submit"][value="Acceder"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Botón "Registrarme" */
+input[type="submit"][value="Registrarme"] {
+    background-color: #008CBA;
+    color: white;
+}
+
+/* Efecto hover para botones */
+input[type="submit"]:hover {
+    opacity: 0.9;
+}
