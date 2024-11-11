@@ -1,0 +1,39 @@
+name: Deploy Terraform to AWS and GitHub
+
+on:
+  push:
+    branches:
+      - main  # O la rama que prefieras
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v4
+
+      # Paso 1: Configurar las credenciales de AWS
+      - name: Set AWS credentials
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_SESSION_TOKEN: ${{ secrets.TOKEN_COOPERATIVA }}
+        run: |
+          echo "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" >> $GITHUB_ENV
+          echo "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" >> $GITHUB_ENV
+           echo "AWS_SESSION_TOKEN=${TOKEN_COOPERATIVA}" >> $GITHUB_ENV
+      
+
+
+      # Paso 3: Inicializar Terraform
+      - name: Terraform Init
+        run: terraform init
+
+
+      # Paso 5: Aplicar el plan de Terraform
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
