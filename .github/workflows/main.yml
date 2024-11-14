@@ -34,10 +34,10 @@ jobs:
         run: terraform init
 
       # Paso 5: Planear la destrucción
-      - name: Terraform plan destroy
-        run: terraform plan -destroy -out=tfplan
+      - name: Terraform plan
+        run: terraform plan 
 
       # Paso 6: Aplicar la destrucción (Undeployment)
-      - name: Terraform apply destroy
-        run: terraform apply -auto-approve tfplan
+      - name: Terraform apply 
+        run: terraform apply 
 
