@@ -4,10 +4,6 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
-     github = {
-      source = "integrations/github"
-      version = "~> 5.0"  # Usa la versión adecuada del proveedor de GitHub
-    }
   }
 }
 
@@ -173,15 +169,4 @@ resource "aws_instance" "cooperativa_instance" {
 }
 
 
-//GITHUB
 
-//Configure the github provider 
-provider "github" {
-  token = var.github_token   # Hace referencia a una variable segura para el token de GitHub
-  owner = "andresop11"  # Sustituye con tu nombre de usuario de GitHub o el de la organización
-}
-
-variable "github_token" {
-  type        = string
-  description = "token_cooperativa"
-}
