@@ -39,5 +39,5 @@ jobs:
 
       # Paso 6: Aplicar la destrucción (Undeployment)
       - name: Terraform apply 
-        run: terraform apply 
+        run: terraform apply -auto-approve 
 
